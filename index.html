@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bon voyage! - your amazing trip planner</title>
+
+		<link
+			href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,200&display=swap"
+			rel="stylesheet"
+		/>
+
+		<style>
+			html,
+			body {
+				min-height: 100vh;
+				font-family: 'Raleway', sans-serif;
+				background-image: url('./bg.png');
+			}
+			.rainbow-text {
+				display: inline-block;
+				background-image: linear-gradient(
+					to left,
+					violet,
+					indigo,
+					blue,
+					green,
+					yellow,
+					orange,
+					red
+				);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+			}
+		</style>
+	</head>
+	<body class="flex flex-col justify-between text-gray-800">
+		<main>
+			<div class="container mx-auto px-4 py-12">
+				<section class="pb-6">
+					<div class="pb-12">
+						<img src="logo.svg" alt="Bon voyage!" class="h-32" />
+						<h2 class="text-3xl italic font-light text-gray-700">
+							your amazing trip planner
+						</h2>
+					</div>
+					<p class="pb-1">
+						The main goal of the app is to simplify the travel planning process.
+					</p>
+					<p class="pb-1">
+						This app will help users to search for attractions in the selected
+						area, information about selected places, and to plan a route to
+						these places. All details of the planned route will be saved in the
+						database for further viewing.
+					</p>
+					<p class="pb-1">
+						Users don't need to open different applications or websites to find
+						monuments and to plan an optimal route, all information will be
+						available in one place immediately.
+					</p>
+				</section>
+
+				<section class="pb-6">
+					<h3 class="text-2xl font-semibold pb-2 text-gray-700">
+						Technologies we are planning to use
+					</h3>
+					<h4 class="text-lg font-semibold pb-1 text-gray-700 rainbow-text">
+						Backend
+					</h4>
+					<p class="pb-2">
+						Main purpuse - searching monuments and information via external
+						API's and saving planned trips.
+						<br />
+						Tech stack:
+						<span class="italic">
+							Java Spring Boot, MediaWiki API, HERE Discover API, HERE Browse
+							API, Google Maps API/Mapbox API
+						</span>
+					</p>
+					<h4 class="text-lg font-semibold pb-1 text-gray-700 rainbow-text">
+						Frontend
+					</h4>
+					<p class="pb-2">
+						Single-page web application client that will provide backend
+						functionality to users.
+						<br />
+						Tech stack:
+						<span class="italic">
+							VueJS, TypeScript, TailwindCSS, Google Maps API/Mapbox API
+						</span>
+					</p>
+					<h4 class="text-lg font-semibold pb-1 text-gray-700">Other</h4>
+					<p class="pb-1">
+						<span class="italic">
+							Docker, Nginx, Apache Tomcat, Digital Ocean
+						</span>
+					</p>
+				</section>
+			</div>
+		</main>
+		<footer class="bg-white w-full">
+			<div class="container mx-auto px-4 py-12 text-gray-600">
+				<h3 class="font-semibold mb-2 text-xl">Authors:</h3>
+				<div class="flex">
+					<div class="w-40">Nikita Shkarupa</div>
+					<a
+						class="ml-2 underline text-gray-700 transition duration-500 hover:text-blue-600"
+						href="mailto:skarunik@fel.cvut.cz"
+					>
+						skarunik@fel.cvut.cz
+					</a>
+				</div>
+				<div class="flex">
+					<div class="w-40">Bc. Tatiana Kulikova</div>
+					<a
+						class="ml-4 underline text-gray-700 transition duration-500 hover:text-pink-600"
+						href="mailto:kuliktat@fel.cvut.cz"
+					>
+						kuliktat@fel.cvut.cz
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
